@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrapper">
+    
+      <section id="rating_card" class="card text-left flow ">
+        <!-- Rating state start -->
+        <img class="star" src="./images/icon-star.svg" alt="" />
+        <h1 class="text-neutral-100 fs-700 fw-bold">
+          How did we do?
+        </h1>
+
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+
+        </p>
+        <div class="rating" aria-label="Rating">
+          <span class="star" aria-hidden="true" role="img" tabindex="0" aria-label="1">1</span>
+          <span class="star" aria-hidden="true" role="img" tabindex="0" aria-label="2">2</span>
+          <span class="star" aria-hidden="true" role="img" tabindex="0" aria-label="3">3</span>
+          <span class="star" aria-hidden="true" role="img" tabindex="0" aria-label="4">4</span>
+          <span class="star" aria-hidden="true" role="img" tabindex="0" aria-label="5">5</span>
+      </div>
+      <button class="submit-btn">Submit</button>
+
+
+        <!-- Rating state end -->
+      </section>
+
+      <section id="response" class="card text-center flow hidden ">
+        <!-- Thank you state start -->
+        <img src="./images/illustration-thank-you.svg" alt="" />
+
+        <p class="highlight">
+          You selected <span id="response__rating"><!-- Add rating here --></span> out of 5
+        </p>
+
+        <h1 class="text-neutral-100 fs-700">
+          Thank you!
+        </h1>
+
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+
+        <!-- Thank you state end -->
+      </section>
+
+  
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sayyed Aaman</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
